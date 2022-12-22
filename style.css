@@ -14,22 +14,20 @@
 .nav-bar{
     font-family: "Work Sans", sans-serif ;
     font-weight: 700 ;
-    margin: 45px ;
+    margin: 45px;
     display: flex ;
     justify-content: space-between ;
-   
 }
 
 .nav-link ul, .footer-link{
     display: flex;
     justify-content: space-evenly;
-   
     font-size: 16px;
 }
 
 .nav-link li , .footer-link li{
     list-style: none;
-    padding-right:  30px;
+    padding-left:  40px;
     text-decoration: none;
     cursor: pointer;
 }
@@ -37,6 +35,7 @@
 li a{
     color: #666666;
     text-decoration: none;
+    cursor: pointer;
 }
 li a:hover, a:active{
     color: #000000;
@@ -67,7 +66,7 @@ li a:hover, a:active{
     width: 100%;
     height: 50vh;
     position: relative;
-    opacity: 0.8;
+    /* opacity: 0.8; */
     
 }
 
@@ -77,9 +76,9 @@ li a:hover, a:active{
     font-size: 52px;
     font-family: " Merriweather", sans-serif;
     font-weight: 700;
-    position: absolute;
-    bottom: 50%;
-    right: 50%;
+    text-align: center;
+    padding: 8rem 0;
+  
    
 }
 
@@ -106,8 +105,8 @@ li a:hover, a:active{
     line-height: 1.85;
 }
 .main-page-top{
-display: flex;
-margin-bottom: 15px;
+    display: flex;
+    margin-bottom: 15px;
 }
 .main-page-bottom{
     display: flex;
@@ -115,8 +114,8 @@ margin-bottom: 15px;
 
 
 .main-page-top img , .main-page-bottom img{
-width: 100%;
-height: 100%;
+    width: 100%;
+    height: 100%;
 }
 .main-page-top p , .main-page-bottom img{
     margin-left: 25px; 
@@ -145,20 +144,22 @@ footer p{
 .checkbtn{
     font-size: 30px;
     color: #000000;
-    position: relative;
+    /* position: relative; */
     cursor: pointer;
     display: none;
+   
 }
 
 @media(max-width:800px){
  
     .logo h2{
         font-size: 25px;
-        margin-right: 45px;
+        margin-right: 60px;
     }
     .nav-link  ul{
         width: 100%;
-        height: 100vh;
+        margin-top: 40px;
+        /* height: 100vh; */
         flex-direction: column;
         justify-content: center;
         text-align: center;
@@ -169,50 +170,51 @@ footer p{
         align-items: flex-start;
         margin: 15px;
     }
+     .nav-bar .nav-link {
+        margin-left: 40px;
+     }
     .nav-link {
         width: 100%;
         display: none;
     }
-    .nav-link li{
-        text-align: center;
-    }
+        
     .nav-link  li a {
-        padding: 0.5rem 1rem;
+        padding: 0.5rem ;
         display: block;
-
+        text-align: center;
+     
     }
 
     .checkbtn{
         display: block;
-        margin-right: 15px;
-        
+        /* margin-right: 25px; */
     }
-    .nav-link li a{
+    /* .nav-link li a{
         font-size: 20px;
-    }
+        justify-content: center;
+    } */
     .nav-link  li {
         display: block;
-        padding: 15px;
+         text-align: center;
         width: 100%;
     }
     .hero-top{
         margin: 0;
+        height: 30vh;
     }
     li a{
-        color: #000000;
         text-decoration: none;
         padding: 10px;
         width: 100%;
     }
     li a:hover, a:active{
-        background-color: #000000;
-        width: 100%;
-        color: #666666;
-         transition: .5s;
+         width: 100%;
+         transition: 0.5s;
     }
 
     .nav-link.active{
         display: flex;
+        align-items: center;
     }
 
     .search{
@@ -221,6 +223,10 @@ footer p{
     .hero-top h2, .hero-bottom h1{
         font-size: 35px;
     }
+     .hero-top h2{
+         padding: 4rem 0;
+       
+     }
     .main-page-top, .main-page-bottom, footer , .footer-link{
         flex-direction: column;
     }
@@ -240,6 +246,7 @@ footer p{
     }
     p{
         font-size: 16px;
+        margin: 15px;
     }
     .main-page-top p {
         margin-left: 0; 
@@ -248,7 +255,7 @@ footer p{
         margin-left: 0;
      }
     img{
-        width: 90%;
+        width: 80%;
         justify-content: center;
     }
 }
