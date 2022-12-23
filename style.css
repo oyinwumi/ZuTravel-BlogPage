@@ -149,6 +149,9 @@ footer p{
     display: none;
    
 }
+ .main-page p{
+    text-align: justify;
+}
 
 @media(max-width:800px){
  
@@ -187,12 +190,9 @@ footer p{
 
     .checkbtn{
         display: block;
-        /* margin-right: 25px; */
+        
     }
-    /* .nav-link li a{
-        font-size: 20px;
-        justify-content: center;
-    } */
+  
     .nav-link  li {
         display: block;
          text-align: center;
@@ -240,7 +240,7 @@ footer p{
     }
 
     .footer-link{
-        margin-top: 20px;
+        margin: 15px;
     }
     .footer-link a{
         padding: 15px;
@@ -258,5 +258,8 @@ footer p{
     img{
         width: 80%;
         justify-content: center;
+    }
+    footer p{
+        font-size: 18px;
     }
 }
